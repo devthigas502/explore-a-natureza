@@ -1,0 +1,27 @@
+.faq {
+    margin: 40px;
+}
+
+.faq > .tópico {
+    color: var(--color-title);
+    font-size: 50px;
+    font-weight: 600;
+    font-family: var(--font-display);
+    margin-bottom: 20px;
+}
+
+.bloco2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.bloco2 > nav {
+    color: var(--color-brown);
+    font-size: 25px;
+    border-bottom: 1px solid var(--color-border-faq);
+}
+
+.bloco2 > div {
+    margin: 30px 5px;
+}
