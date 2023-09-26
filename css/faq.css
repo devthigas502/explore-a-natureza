@@ -1,8 +1,8 @@
-.faq {
+.js-faq {
     margin: 40px;
 }
 
-.faq > .tópico {
+.js-faq > .tópico {
     color: var(--color-title);
     font-size: 50px;
     font-weight: 600;
@@ -16,7 +16,7 @@
     font-family: var(--font-primary);
 }
 
-.bloco2 > nav {
+.bloco2 > h3 {
     color: var(--color-brown);
     font-size: 25px;
     border-bottom: 1px solid var(--color-border-faq);
