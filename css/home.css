@@ -51,11 +51,3 @@ img{
     gap: 16px;
     font-family: var(--font-primary);
 }
-
-.js-conteudo section {
-    display: none;
-}
-
-.js-conteudo section.active {
-    display: block;
-}
