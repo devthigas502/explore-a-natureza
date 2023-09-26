@@ -25,3 +25,11 @@
 .bloco2 > div {
     margin: 30px 5px;
 }
+
+.js-faq p {
+    display: none;
+}
+
+.js-faq p.active {
+    display: block;
+}
