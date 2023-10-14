@@ -41,38 +41,39 @@ imagens.forEach((item, indice)=>{
     })
 })
 
-const menuOri = document.querySelector('.js-menu')
+const menuResponsivo = document.querySelector('.js-menu')
 const menu = document.querySelectorAll('.js-menu .menu')
-const menuspan = document.querySelector('.js-menu .menu span')
-const menu2 = document.querySelectorAll('.js-menu div')
-const simboloMenu = document.querySelector('.js-menu .menu span')
+const mspan = document.querySelector('.js-menu .menu span')
+const mdiv = document.querySelectorAll('.js-menu div')
+const simbolo = document.querySelector('.js-menu .menu span')
 
 menu.forEach((item) =>{
     item.addEventListener('click', () =>{
-        menu2.forEach((item) =>{
-            menuOri.classList.toggle('active')
+        mdiv.forEach((item) =>{
+            menuResponsivo.classList.toggle('active')
             item.classList.toggle('active')
-            if (menuOri.classList.contains('active') == true){
-                menuspan.innerText = "close"
-            }else{
-                menuspan.innerText = "menu"
+            if (menuResponsivo.classList.contains('active') == true){
+                mspan.innerText = "close"
+            }
+            else{
+                mspan.innerText = "menu"
             }
         })
     } )
 })
 
 
-const btn = document.querySelector('.btn')
+const form = document.querySelector('.form')
+const dados = {}
 
-function mudarNomeBtn(){
-    btn.innerText = 'Copiado'
-    setTimeout(() => {
-        btn.innerText = 'Copiar'
-    }, 3000)
-    btn.addEventListener('click')
-    
+function pegarValorForm(event){
+    dados[event.target.name] = event.target.value
+    console.log(dados)
 }
 
-function mostrarConsole(msg){
-    console.log(msg)
-}
+form.addEventListener('change', pegarValorForm)
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    localStorage.setItem(dados.email, JSON.stringify(dados))
+    alert("Dados salvos com sucesso")
+})
