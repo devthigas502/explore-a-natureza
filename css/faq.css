@@ -33,3 +33,14 @@
 .js-faq p.active {
     display: block;
 }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .bloco2{
+        width: 455px;
+        padding-left: 30px;
+    }
+
+    .bloco2 p{
+        padding-bottom: 15px;
+    }
+}

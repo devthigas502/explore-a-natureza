@@ -75,27 +75,26 @@ img{
     display: block;
 }
 
-/**DIMENSÕES PARA MOBILE**/
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    
-}
+    .home{
+        width: fit-content;
+    }
 
-/**DIMENSÕES PARA TABLET**/
-@media screen and (min-width: 600px) and (max-width: 992px) {
-    
+    .bloco{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: end;
+        justify-content: center;
+        padding-left: 50px;
+    }
 
-}
+    .js-conteúdo{
+        width: 400px;
+    }
 
-/**DIMENSÕES PARA LAPTOP**/
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-    
-
-
-}
-
-/**DIMENSÕES PARA DESKTOP**/
-@media screen and (min-width: 1024px) {
-
+    .imagens{
+        max-width: 460px;
+    }
 
 
 }
