@@ -1,3 +1,5 @@
+// Importando os conteúdos da pasta MODULES
+
 import faq from "./modules/faq.js"
 import content from "./modules/content.js"
 import menuMobileInit from "./modules/menu.js"

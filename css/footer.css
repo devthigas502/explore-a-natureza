@@ -1,20 +1,31 @@
+/* Define o estilo do elemento footer. */
 footer {
     background-color: var(--background-green);
+    /* Define a cor de fundo. */
     color: var(--color-white);
+    /* Define a cor do texto. */
     height: 70px;
+    /* Define a altura como 70px. */
     display: flex;
+    /* Aplica um layout flexível. */
     align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
     padding: 20px;
+    /* Adiciona um preenchimento de 20px em todos os lados. */
     font-weight: 400;
+    /* Define a espessura da fonte como normal (400). */
     font-family: var(--font-primary);
+    /* Define a família da fonte personalizada. */
 }
 
+/* Define regras de estilo específicas para telas com largura entre 320px e 600px. */
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    footer{
+    footer {
         width: 600px;
+        /* Define a largura como 600px. */
         height: 10rem;
+        /* Define a altura como 10 rem (1rem = tamanho da fonte raiz). */
         font-size: 28px;
+        /* Define o tamanho da fonte como 28px. */
     }
-
-
 }

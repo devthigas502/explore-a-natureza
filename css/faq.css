@@ -1,46 +1,69 @@
+/* Define uma margem de 40px para todos os lados do elemento com a classe 'js-faq'. */
 .js-faq {
     margin: 40px;
 }
 
-.js-faq > .tópico {
+/* Estiliza elementos dentro da classe 'js-faq' com a classe 'tópico'. */
+.js-faq>.tópico {
     color: var(--color-title);
+    /* Define a cor do texto. */
     font-size: 50px;
+    /* Define o tamanho da fonte. */
     font-weight: 600;
+    /* Define a espessura da fonte como negrito (600). */
     font-family: var(--font-display);
+    /* Define a família da fonte personalizada. */
     margin-bottom: 20px;
+    /* Adiciona uma margem inferior de 20px. */
 }
 
+/* Estiliza elementos com a classe 'bloco2'. */
 .bloco2 {
     font-size: 20px;
+    /* Define o tamanho da fonte para 20px. */
     font-weight: 400;
+    /* Define a espessura da fonte como normal (400). */
     font-family: var(--font-primary);
+    /* Define a família da fonte personalizada. */
 }
 
-.bloco2 > h3 {
+/* Estiliza elementos dentro da classe 'bloco2' que são h3. */
+.bloco2>h3 {
     color: var(--color-brown);
+    /* Define a cor do texto. */
     font-size: 25px;
+    /* Define o tamanho da fonte para 25px. */
     border-bottom: 1px solid var(--color-border-faq);
+    /* Adiciona uma borda inferior. */
 }
 
-.bloco2 > div {
+/* Estiliza elementos dentro da classe 'bloco2' que são div. */
+.bloco2>div {
     margin: 30px 5px;
+    /* Define margem de 30px na parte superior e inferior e 5px nos lados. */
 }
 
+/* Oculta todos os elementos p dentro da classe 'js-faq'. */
 .js-faq p {
     display: none;
 }
 
+/* Exibe elementos p com a classe 'active' dentro da classe 'js-faq'. */
 .js-faq p.active {
     display: block;
 }
 
+/* Define regras de estilo específicas para telas com largura entre 320px e 600px. */
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    .bloco2{
+    .bloco2 {
         width: 455px;
+        /* Define a largura como 455px. */
         padding-left: 30px;
+        /* Adiciona preenchimento à esquerda de 30px. */
     }
 
-    .bloco2 p{
+    .bloco2 p {
         padding-bottom: 15px;
+        /* Adiciona preenchimento inferior de 15px. */
     }
 }

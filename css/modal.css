@@ -1,51 +1,86 @@
-.modal{
+/* Define estilos para a classe 'modal'. */
+.modal {
     display: none;
+    /* Inicialmente, o modal é oculto. */
     padding: 20px;
+    /* Adiciona preenchimento de 20px. */
     align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
     width: 600px;
+    /* Define a largura como 600px. */
     max-width: 100%;
+    /* Define a largura máxima como 100%. */
     position: fixed;
+    /* Define uma posição fixa. */
     top: 30%;
+    /* Define a distância do topo como 30%. */
     left: 50%;
+    /* Define a distância da esquerda como 50%. */
     transform: translateX(-50%);
+    /* Centraliza horizontalmente usando transform. */
 }
 
-.modal-forms{
+/* Define estilos para o formulário dentro do modal. */
+.modal-forms {
     background-color: #f5faf6;
+    /* Define a cor de fundo. */
     display: flex;
+    /* Aplica um layout flexível. */
     flex-direction: column;
+    /* Define a direção dos filhos como coluna. */
     gap: 10px;
+    /* Adiciona um espaçamento de 10px entre os filhos. */
     flex: 1;
+    /* Ocupa todo o espaço disponível. */
     border: 10px double var(--background-green);
+    /* Define uma borda dupla. */
     padding: 40px;
+    /* Adiciona preenchimento de 40px. */
 }
 
-.modal-forms input{
+/* Estiliza elementos 'input' dentro de 'modal-forms'. */
+.modal-forms input {
     border: 2px solid #6e6e6e;
+    /* Define uma borda sólida de 2px. */
     padding: 10px;
+    /* Adiciona preenchimento de 10px. */
 }
 
-.modal-close{
+/* Define estilos para o elemento 'modal-close'. */
+.modal-close {
     position: absolute;
+    /* Define uma posição absoluta. */
     top: -6px;
+    /* Define a distância do topo como -6px. */
     right: 0;
+    /* Define a distância da direita como 0. */
     cursor: pointer;
+    /* Altera o cursor para um ponteiro quando hover. */
     background-color: tomato;
-    border-radius:20%;
+    /* Define a cor de fundo como vermelho. */
+    border-radius: 20%;
+    /* Define um raio de borda de 20%. */
 }
 
-.js-modal.active{
+/* Define regras de estilo quando a classe 'js-modal' está ativa. */
+.js-modal.active {
     display: flex;
+    /* Exibe o modal quando a classe 'active' está presente. */
     animation: showModal .3s forwards;
+    /* Aplica a animação 'showModal'. */
 }
 
-@keyframes showModal{
-    from{
+/* Define a animação 'showModal'. */
+@keyframes showModal {
+    from {
         transform: translate(-50%, -50%) scale(0);
+        /* Começa com escala 0 e opacidade 0. */
         opacity: 0;
     }
+
     to {
         transform: translate(-50%, -50%) scale(1);
+        /* Termina com escala 1 e opacidade 1. */
         opacity: 1;
     }
 }

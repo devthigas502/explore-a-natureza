@@ -1,85 +1,137 @@
+/* Define estilos para o elemento header. */
 header {
     background-color: var(--background-green);
+    /* Define a cor de fundo. */
     color: var(--color-white);
+    /* Define a cor do texto. */
     height: 70px;
+    /* Define a altura como 70px. */
     padding: 20px;
+    /* Adiciona preenchimento de 20px. */
     gap: 20px;
+    /* Adiciona um espaçamento de 20px entre os elementos filhos. */
     display: flex;
+    /* Aplica um layout flexível. */
     align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
     max-width: 2000px;
+    /* Define a largura máxima como 2000px. */
     font-size: 15px;
+    /* Define o tamanho da fonte. */
     font-weight: 500;
+    /* Define a espessura da fonte como 500. */
     font-family: var(--font-primary);
+    /* Define a família da fonte. */
 }
 
-header > div {
+/* Estiliza elementos dentro de header com a tag 'div'. */
+header>div {
     display: flex;
+    /* Aplica um layout flexível. */
     justify-content: center;
+    /* Centraliza o conteúdo horizontalmente. */
     align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
 }
 
+/* Estiliza elementos com a classe 'login'. */
 .login {
     background-color: var(--background);
+    /* Define a cor de fundo. */
     color: var(--color-brown);
+    /* Define a cor do texto. */
     padding: 5px;
+    /* Adiciona preenchimento de 5px. */
     border-radius: 5px;
+    /* Define um raio para as bordas. */
 }
 
-header > .menu{
+/* Estiliza elementos dentro de header com a classe 'menu'. */
+header>.menu {
     background-color: var(--background-scroll);
+    /* Define a cor de fundo. */
     border-radius: 4px;
+    /* Define um raio para as bordas. */
     padding: 5px;
+    /* Adiciona preenchimento de 5px. */
 }
 
-.js-menu .menu{
+/* Oculta elementos com a classe 'menu' dentro de 'js-menu'. */
+.js-menu .menu {
     display: none;
+    /* Define a exibição como 'none'. */
 }
 
+/* Define regras de estilo específicas para telas com largura entre 320px e 600px. */
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    .js-menu div{
+
+    /* Oculta elementos 'div' dentro de 'js-menu'. */
+    .js-menu div {
         display: none;
+        /* Define a exibição como 'none'. */
     }
-    .js-menu .menu{
+
+    /* Exibe elementos 'menu' dentro de 'js-menu'. */
+    .js-menu .menu {
         display: flex;
+        /* Exibe os elementos 'menu'. */
         justify-content: center;
+        /* Centraliza o conteúdo horizontalmente. */
         align-items: center;
+        /* Alinha os itens verticalmente ao centro. */
         gap: 5px;
+        /* Adiciona um espaçamento de 5px entre os elementos. */
     }
 
-    .js-menu.active{
+    /* Define regras de estilo quando a classe 'js-menu' está ativa. */
+    .js-menu.active {
         display: flex;
+        /* Exibe elementos com a classe 'js-menu' e flex layout. */
         align-items: start;
+        /* Alinha os itens verticalmente ao início. */
         flex-direction: column;
+        /* Define a direção dos filhos como coluna. */
         height: 350px;
+        /* Define a altura como 350px. */
     }
 
-    .js-menu div.active{
+    /* Exibe elementos 'div' ativos dentro de 'js-menu'. */
+    .js-menu div.active {
         display: flex;
+        /* Exibe elementos 'div' ativos. */
         justify-content: center;
+        /* Centraliza o conteúdo horizontalmente. */
         align-items: center;
+        /* Alinha os itens verticalmente ao centro. */
     }
 
-    header{
+    /* Define a largura e altura de header. */
+    header {
         width: 600px;
+        /* Define a largura como 600px. */
         height: 10rem;
+        /* Define a altura como 10 rem (1rem = tamanho da fonte raiz). */
     }
-    
-    .js-menu .menu{
+
+    /* Define regras de estilo para elementos 'menu' dentro de 'js-menu'. */
+    .js-menu .menu {
         width: 8rem;
+        /* Define a largura como 8rem. */
         height: 5rem;
+        /* Define a altura como 5rem. */
         font-size: 25px;
-    }
-    
-    .js-menu .item{
-        font-size: 25px;
+        /* Define o tamanho da fonte como 25px. */
     }
 
-    .js-menu .login{
+    /* Define o tamanho da fonte para elementos 'item' dentro de 'js-menu'. */
+    .js-menu .item {
         font-size: 25px;
+        /* Define o tamanho da fonte como 25px. */
     }
 
+    /* Define o tamanho da fonte para elementos 'login' dentro de 'js-menu'. */
+    .js-menu .login {
+        font-size: 25px;
+        /* Define o tamanho da fonte como 25px. */
+    }
 }
-
-
-
-

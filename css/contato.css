@@ -1,46 +1,69 @@
+/* Define uma margem de 40px para todos os lados do elemento com a classe 'contato'. */
 .contato {
     margin: 40px;
 }
 
-.contato > .tópico {
+/* Estiliza elementos dentro da classe 'contato' com a classe 'tópico'. */
+.contato>.tópico {
     color: var(--color-title);
+    /* Define a cor do texto. */
     margin-bottom: 20px;
+    /* Adiciona uma margem inferior de 20px. */
     font-size: 50px;
+    /* Define o tamanho da fonte. */
     font-weight: 600;
+    /* Define a espessura da fonte como negrito (600). */
     font-family: var(--font-display);
+    /* Define a família da fonte personalizada. */
 }
 
+/* Estiliza elementos com a classe 'bloco3'. */
 .bloco3 {
     display: flex;
+    /* Aplica um layout flexível. */
     flex-direction: row;
+    /* Define a direção dos filhos como linha. */
     gap: 30px;
+    /* Adiciona um espaçamento de 30px entre os filhos. */
 }
 
-.bloco3 > div {
+/* Estiliza elementos dentro da classe 'bloco3' que são filhos diretos de div. */
+.bloco3>div {
     display: flex;
+    /* Aplica um layout flexível. */
     flex-direction: column;
+    /* Define a direção dos filhos como coluna. */
     font-weight: 400;
+    /* Define a espessura da fonte como normal (400). */
     font-family: var(--font-primary);
+    /* Define a família da fonte personalizada. */
     gap: 10px;
+    /* Adiciona um espaçamento de 10px entre os filhos. */
 }
 
+/* Define regras de estilo específicas para telas com largura entre 320px e 600px. */
 @media screen and (min-width: 320px) and (max-width: 600px) {
-    .bloco3{
+    .bloco3 {
         display: flex;
+        /* Mantém um layout flexível. */
         flex-wrap: wrap;
+        /* Permite que os elementos quebrem em uma nova linha quando não couberem na tela. */
         align-content: end;
+        /* Alinha o conteúdo no final do container flexível. */
     }
 
-    .infos{
+    .infos {
         font-size: 25px;
+        /* Define o tamanho da fonte para 25px. */
     }
 
-    .contato{
+    .contato {
         padding-left: 60px;
+        /* Adiciona um preenchimento à esquerda de 60px. */
     }
 
-    .contato .tópico{
+    .contato .tópico {
         width: 400px;
+        /* Define uma largura de 400px para elementos com a classe 'tópico' dentro de 'contato'. */
     }
-
 }

@@ -1,28 +1,29 @@
-export default function faq(){
+export default function faq() {
 
-    // const - variáveis constantes que não podem ser alteradas
-    // irá selecionar todo o conteúdo das perguntas e respostas presentes no FAQ (dentro do parênteses é o nome correspondente dada à classe)
-    const pergunta = document.querySelectorAll('.js-faq h3')
-    const resposta = document.querySelectorAll('.js-faq p')
+    // Variáveis constantes que não podem ser alteradas.
+    // Seleciona todos os elementos de pergunta e resposta no FAQ.
+    const pergunta = document.querySelectorAll('.js-faq h3');
+    const resposta = document.querySelectorAll('.js-faq p');
 
-    // irá modificar a seta ao lado da pergunta do FAQ, que irá mexer conforme é clicado para fechar e abrir
-    const seta = document.querySelectorAll('.js-faq span')
+    // Modifica o ícone de seta ao lado da pergunta no FAQ para abrir e fechar.
+    const seta = document.querySelectorAll('.js-faq span');
 
-
-    function ativarFaq(indice){
-        resposta[indice].classList.toggle('active')
-        if (resposta[indice].classList.contains('active')== true){
-            seta[indice].innerText = "▼"
-        }
-        else{
-            seta[indice].innerText = "▲"
+    // Função para ativar ou desativar uma pergunta no FAQ com base no índice.
+    function ativarFaq(indice) {
+        // Alterna a classe 'active' na resposta para mostrar ou ocultar.
+        resposta[indice].classList.toggle('active');
+        // Altera o texto da seta com base na visibilidade da resposta.
+        if (resposta[indice].classList.contains('active')) {
+            seta[indice].innerText = "▼"; // Define a seta para baixo quando a resposta está ativa.
+        } else {
+            seta[indice].innerText = "▲"; // Define a seta para cima quando a resposta não está ativa.
         }
     }
 
+    // Adiciona um evento de clique a cada elemento de pergunta no FAQ.
     pergunta.forEach((item, indice) => {
-        item.addEventListener('click',() => {
-            ativarFaq(indice)
-        })
-    })
-
+        item.addEventListener('click', () => {
+            ativarFaq(indice); // Chama a função para ativar ou desativar a pergunta quando clicada.
+        });
+    });
 }
