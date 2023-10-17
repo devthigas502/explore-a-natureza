@@ -1,0 +1,78 @@
+/* Define estilos gerais para todos os elementos (*). */
+* {
+    margin: 0;
+    /* Remove margens. */
+    padding: 0;
+    /* Remove preenchimentos. */
+    border: 0;
+    /* Remove bordas. */
+    outline: 0;
+    /* Remove a borda de foco. */
+    box-sizing: border-box;
+    /* Define a modelagem de caixa como "border-box". */
+    list-style: none;
+    /* Remove marcadores de lista. */
+    text-decoration: none;
+    /* Remove decoração de texto, como sublinhado em links. */
+}
+
+/* Define variáveis de cores e fontes personalizadas usando a pseudo-classe :root. */
+:root {
+    --color-white: #fff;
+    --background: #eef8f5;
+    --background-green: #2fa97c;
+    --color-title: #565756;
+    --color-border: #f4e2e2;
+    --background-scroll: #75d2a8;
+    --color-border-scroll: #d8d8d8;
+    --color-text: #626262;
+    --color-brown: #814813;
+    --color-border-faq: #d8d8d8;
+    --font-display: 'Playfair Display SC', serif;
+    --font-primary: 'Poppins', sans-serif;
+    --width: 1200px;
+}
+
+/* Estilo geral do corpo da página. */
+body {
+    background-color: var(--background);
+    /* Define a cor de fundo. */
+    font-family: var(--font-primary);
+    /* Define a família da fonte. */
+    color: var(--color-text);
+    /* Define a cor do texto. */
+}
+
+/* Estilo padrão para imagens. */
+img {
+    display: block;
+    /* Define as imagens como elementos de bloco. */
+}
+
+/* Estilo para elementos com a classe 'title'. */
+.title {
+    font-size: 4rem;
+    /* Define o tamanho da fonte. */
+    max-width: 1200px;
+    /* Define a largura máxima. */
+    margin: 2rem auto;
+    /* Define margens nas laterais e no topo/baixo. */
+    padding: 0.5rem;
+    /* Define preenchimento de 0.5rem. */
+    color: var(--color-title);
+    /* Define a cor do texto. */
+    font-family: var(--font-display);
+    /* Define a família da fonte. */
+    letter-spacing: 2px;
+    /* Define o espaçamento entre letras. */
+}
+
+/* Estilo para o elemento com a classe 'container'. */
+.container {
+    max-width: 1200px;
+    /* Define a largura máxima. */
+    margin: 0 auto;
+    /* Centraliza o conteúdo horizontalmente. */
+    padding: 1rem;
+    /* Define preenchimento de 1rem. */
+}

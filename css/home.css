@@ -1,0 +1,190 @@
+/* Define estilos para a classe 'home'. */
+.home {
+    margin: 40px;
+    /* Define uma margem de 40px. */
+    display: flex;
+    /* Aplica um layout flexível. */
+    flex-direction: column;
+    /* Define a direção dos filhos como coluna. */
+    gap: 20px;
+    /* Adiciona um espaçamento de 20px entre os filhos. */
+}
+
+/* Estiliza elementos h1 dentro da classe 'home'. */
+.home>h1 {
+    margin: 10px;
+    /* Define uma margem de 10px. */
+    font-size: 45px;
+    /* Define o tamanho da fonte. */
+    font-weight: 600;
+    /* Define a espessura da fonte como negrito (600). */
+}
+
+/* Estiliza elementos com a classe 'bloco'. */
+.bloco {
+    display: flex;
+    /* Aplica um layout flexível. */
+    flex-direction: row;
+    /* Define a direção dos filhos como linha. */
+    gap: 40px;
+    /* Adiciona um espaçamento de 40px entre os filhos. */
+}
+
+/* Estiliza elementos com a classe 'imagens'. */
+.imagens {
+    max-width: 250px;
+    /* Define a largura máxima como 250px. */
+    max-height: 500px;
+    /* Define a altura máxima como 500px. */
+    overflow-x: hidden;
+    /* Oculta a barra de rolagem horizontal. */
+}
+
+/* Estiliza todas as imagens. */
+img {
+    width: 900px;
+    /* Define a largura da imagem como 900px. */
+    height: 600px;
+    /* Define a altura da imagem como 600px. */
+}
+
+/* Estiliza a barra de rolagem no navegador Chrome. */
+::-webkit-scrollbar {
+    background-color: #d9d9d9;
+    /* Define a cor de fundo da barra de rolagem. */
+    width: 12px;
+    /* Define a largura da barra de rolagem. */
+}
+
+/* Estiliza o polegar da barra de rolagem no navegador Chrome. */
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-scroll);
+    /* Define a cor de fundo do polegar. */
+}
+
+/* Estiliza elementos com a classe 'tópico'. */
+.tópico {
+    color: var(--color-brown);
+    /* Define a cor do texto. */
+    font-size: 34px;
+    /* Define o tamanho da fonte. */
+    font-weight: 600;
+    /* Define a espessura da fonte como negrito (600). */
+    font-family: var(--font-display);
+    /* Define a família da fonte. */
+    margin: 5px 5px;
+    /* Define margens de 5px. */
+}
+
+/* Estiliza elementos com a classe 'paragrafo'. */
+.paragrafo {
+    margin-top: 15px;
+    /* Define uma margem superior de 15px. */
+    margin-bottom: 15px;
+    /* Define uma margem inferior de 15px. */
+    font-family: 'Poppins';
+    /* Define a família da fonte. */
+    font-size: 18px;
+    /* Define o tamanho da fonte. */
+    font-weight: 400;
+    /* Define a espessura da fonte como normal (400). */
+    line-height: 29px;
+    /* Define a altura da linha. */
+    letter-spacing: 0em;
+    /* Define o espaçamento entre letras. */
+    text-align: left;
+    /* Define o alinhamento do texto à esquerda. */
+    max-width: 850px;
+    /* Define a largura máxima como 850px. */
+}
+
+/* Estiliza elementos com a classe 'js-conteúdo'. */
+.js-conteúdo {
+    font-weight: 400;
+    /* Define a espessura da fonte como normal (400). */
+    font-size: 20px;
+    /* Define o tamanho da fonte. */
+    display: flex;
+    /* Aplica um layout flexível. */
+    flex-direction: column;
+    /* Define a direção dos filhos como coluna. */
+    gap: 16px;
+    /* Adiciona um espaçamento de 16px entre os filhos. */
+    font-family: var(--font-primary);
+    /* Define a família da fonte. */
+}
+
+/* Oculta elementos section dentro da classe 'js-conteúdo'. */
+.js-conteúdo section {
+    display: none;
+    /* Define a exibição como 'none'. */
+}
+
+/* Exibe elementos section com a classe 'active' dentro da classe 'js-conteúdo'. */
+.js-conteúdo section.active {
+    display: block;
+    /* Define a exibição como 'block'. */
+}
+
+/* Define regras de estilo específicas para telas com largura entre 320px e 600px. */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .home {
+        width: fit-content;
+        /* Define a largura como o mínimo necessário. */
+    }
+
+    .bloco {
+        display: flex;
+        /* Mantém um layout flexível. */
+        flex-wrap: wrap;
+        /* Permite que os elementos quebrem em uma nova linha. */
+        align-content: end;
+        /* Alinha o conteúdo no final do container flexível. */
+        justify-content: center;
+        /* Centraliza o conteúdo horizontalmente. */
+        padding-left: 50px;
+        /* Adiciona um preenchimento à esquerda de 50px. */
+    }
+
+    .js-conteúdo {
+        width: 400px;
+        /* Define a largura como 400px. */
+    }
+
+    .imagens {
+        max-width: 460px;
+        /* Define a largura máxima como 460px. */
+    }
+}
+
+/* Define regras de estilo específicas para telas com largura entre 600px e 992px. */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .bloco {
+        display: flex;
+        /* Mantém um layout flexível. */
+        flex-wrap: wrap;
+        /* Permite que os elementos quebrem em uma nova linha. */
+        align-content: end;
+        /* Alinha o conteúdo no final do container flexível. */
+        justify-content: center;
+        /* Centraliza o conteúdo horizontalmente. */
+        padding-left: 50px;
+        /* Adiciona um preenchimento à esquerda de 50px. */
+    }
+
+    .imagens {
+        max-width: 460px;
+        /* Define a largura máxima como 460px. */
+    }
+
+    .home h1 {
+        width: 530px;
+        /* Define a largura como 530px. */
+        font-size: 35px;
+        /* Define o tamanho da fonte. */
+        display: flex;
+        /* Aplica um layout flexível. */
+        justify-content: center;
+        /* Centraliza o conteúdo horizontalmente. */
+    }
+}
